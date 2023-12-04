@@ -7,7 +7,7 @@ import 'dotenv/config'
 
 const app = express();
 // Connecet to mongoose
-mongoose.connect(process.env.REACT_DB)
+mongoose.connect(process.env.EXPRESS_DB)
 const db = mongoose.connection;
 db.on('error', error => console.log(error))
 db.once('open', () => console.log('Database connected... '))
